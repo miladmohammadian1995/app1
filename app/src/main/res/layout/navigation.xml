@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="right">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimary">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#b8b8b8"
+                    android:id="@+id/circleImageUser"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/banner3" />
+
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/textLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:padding="5dp"
+                    android:text="ورود/عضویت"
+                    android:textColor="@color/light"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrCtegory"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:src="@drawable/ic_toc_black_24dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:tint="@color/blackllight" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:text="دسته بندی محصولات"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:id="@+id/lnrbuy"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:src="@drawable/ic_shopping_cart_black_24dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:tint="@color/blackllight" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:text="سفارشات من"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:id="@+id/lnrFav"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:tint="@color/blackllight" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:text="لیست علاقه مندی ها"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:id="@+id/lnrabout"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:src="@drawable/ic_announcement_black_24dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:tint="@color/blackllight" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:text="درباره ما"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</LinearLayout>

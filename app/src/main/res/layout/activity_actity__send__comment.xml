@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Activity.Actity_Send_Comment">
+
+    <include layout="@layout/toolbar2"  android:id="@+id/toolbars"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_below="@+id/toolbars"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edcooment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#e2e2e2"
+        android:hint="ثبت دیدگاه"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textSize="17sp"
+            android:id="@+id/edposotive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:background="#e2e2e2"
+
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.35"
+            android:gravity="center_vertical|right"
+            android:text="نقاط قوت محصول"
+            android:textColor="@color/green"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textSize="17sp"
+            android:id="@+id/ednegative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:background="#e2e2e2"
+
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.35"
+            android:gravity="center_vertical|right"
+            android:text="نقاط ضعف محصول"
+            android:textColor="@color/red"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.willy.ratingbar.ScaleRatingBar
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ratingbarFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srb_numStars="5"
+        app:srb_minimumStars="0"
+        app:srb_rating="0"
+        app:srb_starWidth="30dp"
+        app:srb_starHeight="30dp"
+        app:srb_starPadding="5dp"
+        app:srb_stepSize="1"
+        app:srb_isIndicator="false"
+        app:srb_clickable="true"
+        app:srb_scrollable="true"
+        app:srb_clearRatingEnabled="true"
+        app:srb_drawableEmpty="@drawable/empty"
+        app:srb_drawableFilled="@drawable/filled">
+    </com.willy.ratingbar.ScaleRatingBar>
+</LinearLayout>
+    <Button
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btncomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:text="ثبت دیدگاه"
+        android:textColor="@color/light"
+        android:textSize="18sp" />
+
+</RelativeLayout>

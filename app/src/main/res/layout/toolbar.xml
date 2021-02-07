@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layoutDirection="rtl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.appcompat.widget.Toolbar
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <LinearLayout
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_weight="0.5"
+    android:layout_width="0dp"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/imageNav"
+    android:src="@drawable/ic_dehaze_black_24dp"
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    app:tint="@color/light" />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/light"
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        android:text="فروشگاه من"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagesearch"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:tint="@color/light" />
+            <TextView
+                android:id="@+id/textCount"
+                android:textColor="@color/light"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imagebasketHome"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_shopping_cart_black_24dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:tint="@color/light" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
+</LinearLayout>

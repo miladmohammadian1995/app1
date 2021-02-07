@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.asli">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Class.G"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Home_Activity">
+
+        </activity>
+        <activity android:name=".Activity.Activity_Login" />
+        <activity android:name=".Activity.Activity_Register" />
+        <activity android:name=".Activity.Activity_Profile" />
+        <activity android:name=".Activity.Activity_EditeProfile" />
+        <activity android:name=".Activity.Activity_Category" />
+        <activity android:name=".Activity.Activity_Show" />
+        <activity android:name=".Activity.Activity_Wait" />
+        <activity android:name=".Activity.Activity_Basket" />
+        <activity android:name=".Activity.Activity_Show_Comment" />
+        <activity android:name=".Activity.Actity_Send_Comment" />
+        <activity android:name=".Activity.Activity_Prperties" />
+        <activity android:name=".Activity.Activity_Item_Category" />
+        <activity android:name=".Activity.Activity_Item" />
+        <activity android:name=".Activity.Activity_Search" />
+        <activity android:name=".Activity.Activity_FinalBuy" />
+        <activity android:name=".Activity.Activity_Favorit" />
+        <activity android:name=".Activity.Activity_Banner" />
+        <activity android:name=".Activity.Activity_Order" />
+        <activity android:name=".Activity.Activity_About" />
+        <activity android:name=".Activity.Activity_ForgetPassword" />
+        <activity android:name=".Activity.Activity_AllProduct" />
+        <activity android:name=".Activity.Splash_Screen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+    </application>
+
+</manifest>

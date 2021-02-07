@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity_Login">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar2" />
+
+    <EditText
+        android:gravity="right"
+        android:id="@+id/edEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:drawableRight="@drawable/ic_email_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/gray"
+        android:hint="ایمیل :"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:gravity="right"
+        android:id="@+id/edPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:drawableRight="@drawable/ic_lock_open_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/gray"
+        android:hint="رمز عبور :"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/chkPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="نمایش رمز عبور" />
+
+    <TextView
+        android:id="@+id/textForgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="رمز عبور خود را فراموش کرده اید ؟!"
+        android:textColor="@color/blackllight"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ثبت نام نکرده ام!"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="ورود به فروشگاه من >"
+        android:textColor="@color/light"
+        android:textSize="16sp" />
+</RelativeLayout>
